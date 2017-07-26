@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<div ng-app="">
+  <input ng-model="noun" type="text" placeholder="noun">
+  <input ng-model="adjective" type="text" placeholder="adj">
+  <input ng-model="cost" type="number" placeholder="Cost">
+  <input ng-model="qty" type="number" placeholder="Quantity">
+  <h1> {{noun}} likes to {{adjective}}. Everyday he spends ${{qty*cost}} on soda.  </h1>
+  <h2 ng-if= 'qty>2'> 'That's alot of soda'. </h2>
+</div>
+
+     <script
+        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js">
+     </script>
+  </body>
+</html>

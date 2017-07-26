@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<div ng-app="">
+  <input ng-model="cost" type="number" placeholder="Cost">
+  <input ng-model="qty" type="number" placeholder="Quantity">
+  <h1 ng-if="(cost && qty)">{{qty*cost}}</h1>
+</div>
+
+     <script
+        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js">
+     </script>
+  </body>
+</html>
